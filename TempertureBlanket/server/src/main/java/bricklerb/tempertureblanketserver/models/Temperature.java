@@ -4,9 +4,10 @@ public class Temperature {
     private double value;
     private double lat;
     private double lon;
-    private double locationName;
+    private String zip;
+    private String locationName;
 
-    public Temperature(double value, double lat, double lon, double locationName) {
+    public Temperature(double value, double lat, double lon, String locationName) {
         this.value = value;
         this.lat = lat;
         this.lon = lon;
@@ -40,11 +41,11 @@ public class Temperature {
         this.lon = lon;
     }
 
-    public double getLocationName() {
+    public String getLocationName() {
         return locationName;
     }
 
-    public void setLocationName(double locationName) {
+    public void setLocationName(String locationName) {
         this.locationName = locationName;
     }
 }
